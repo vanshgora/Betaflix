@@ -1,0 +1,44 @@
+/* .accor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.accor-sec {
+    background: #000;
+    color: #fff;
+    padding: 4rem;
+}
+
+.seconhd{
+    font-size: 3.30rem;
+    margin-bottom: 28px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.accordion-button{
+    font-size: 2rem;
+}
+/* 
+.accor-item{
+    max-width: 900px;
+}
+
+.accor-body{
+    background-color: #2e2e2f;
+    color: #fff;
+    border: none;
+}
+
+.accor-head h5{
+    width: 100%;
+    height: 100%;
+    background-color: #434344;
+    color: #fff;
+}
+
+button {
+    border: none;
+    background-color: #000;
+} */

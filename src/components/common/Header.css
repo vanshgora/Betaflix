@@ -1,0 +1,26 @@
+header{
+    margin-top: 1rem;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    z-index: 10;
+}
+
+header img {
+    padding-right: 12rem;
+    width: 350px;
+}
+
+.header-cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lanNsign {
+    margin-left: 12rem;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
