@@ -1,5 +1,5 @@
 header{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     width: 100%;
     background: transparent;
     position: absolute;
@@ -7,20 +7,32 @@ header{
 }
 
 header img {
-    padding-right: 12rem;
-    width: 350px;
+    margin-left: 6rem;
+    width: 150px;
 }
 
 .header-cont{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .lanNsign {
-    margin-left: 12rem;
+    margin-right: 6rem;
     display: flex;
     justify-content: center;
     gap: 30px;
     align-items: center;
+}
+
+@media (max-width:950px) {
+    header img{
+        width:100px ;
+        margin-left: 3rem;
+    }
+
+    .lanNsign {
+        margin-right: 3rem;
+        gap: 20px;
+    }
 }

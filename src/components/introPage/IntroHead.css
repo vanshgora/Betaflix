@@ -1,0 +1,110 @@
+.intro-head {
+    height: 97vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.5)),url('https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.intro-head h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.intro-head p {
+    margin-bottom: 0;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.intro-head h2 {
+    font-size: 38px;
+}
+
+#btn-get-started{
+    font-size: 23px;
+    padding: 0.6rem 1.3rem;
+    background-color: #102f9f;
+    font-weight: 700;
+    color: #fff;
+}
+
+.get-started-form {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.get-started-form input {
+    border: 0.5px solid #fff;
+    color: #FFF;
+    border-radius: 5px;
+    width:68% ;
+    height: 100%;
+    background: #00000080;
+}
+
+@media (max-width:950px){
+    .intro-head{
+        height: 80vh;
+    }
+
+    .intro-head h1 {
+        width: 75%;
+        font-size: 35px;
+    }
+
+    .intro-head h2 {
+        font-size: 22px;
+        width: 75%;
+    }
+
+    .intro-head p{
+        font-size: 1.1rem;
+        width: 75%;
+    }
+
+    #btn-get-started{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:600px){
+    .intro-head{
+        height: 65vh;
+        gap: 10px;
+    }
+
+    .intro-head h1{
+        margin-top: 25px;
+        font-size: 30px;
+    }
+
+    .intro-head h2{
+        font-size: 18px;
+    }
+
+    .intro-head p {
+        font-size: 14px;
+    }
+
+    .get-started-form{
+        flex-direction: column;
+    }
+
+    .get-started-form input {
+       height: 50px; 
+       width: 85%;
+    }
+}
