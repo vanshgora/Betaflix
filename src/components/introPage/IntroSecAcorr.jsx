@@ -1,5 +1,6 @@
 import React from 'react'
 import './IntroSecAcorr.css'
+import GetStarted from './GetStarted'
 
 export default function IntroSecAcorr() {
     return (
@@ -85,6 +86,7 @@ export default function IntroSecAcorr() {
                     </div>
                 </div>
                 </div>
+                <GetStarted/>
             </div>
         )
 }

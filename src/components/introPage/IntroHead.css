@@ -11,6 +11,7 @@
     align-items: center;
     text-align: center;
     gap: 20px;
+    border-bottom: 10px solid #242424;
 }
 
 .intro-head h1{
@@ -26,33 +27,6 @@
 
 .intro-head h2 {
     font-size: 38px;
-}
-
-#btn-get-started{
-    font-size: 23px;
-    padding: 0.6rem 1.3rem;
-    background-color: #102f9f;
-    font-weight: 700;
-    color: #fff;
-}
-
-.get-started-form {
-    width: 90%;
-    max-width: 600px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-}
-
-.get-started-form input {
-    border: 0.5px solid #fff;
-    color: #FFF;
-    border-radius: 5px;
-    width:68% ;
-    height: 100%;
-    background: #00000080;
 }
 
 @media (max-width:950px){
@@ -74,10 +48,6 @@
         font-size: 1.1rem;
         width: 75%;
     }
-
-    #btn-get-started{
-        font-size: 20px;
-    }
 }
 
 @media (max-width:600px){
@@ -97,14 +67,5 @@
 
     .intro-head p {
         font-size: 14px;
-    }
-
-    .get-started-form{
-        flex-direction: column;
-    }
-
-    .get-started-form input {
-       height: 50px; 
-       width: 85%;
     }
 }

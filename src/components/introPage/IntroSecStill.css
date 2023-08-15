@@ -1,0 +1,30 @@
+.img-sec {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    border-bottom: 10px solid #242424;
+    color: #fff;
+    padding: 5rem 10%;
+    gap: 30px;
+}
+
+.img-sec .text-div {
+    flex-basis: 55%;
+    order: 2;
+}
+
+.img-sec img {
+    flex-basis: 45%;
+}
+
+.img-sec h2 {
+    color: #fff;
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.img-sec p {
+    font-size: 24px;
+    font-weight: 400;
+}

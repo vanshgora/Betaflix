@@ -1,0 +1,45 @@
+
+#btn-get-started{
+    font-size: 23px;
+    padding: 0.6rem 1.3rem;
+    background-color: #102f9f;
+    font-weight: 700;
+    color: #fff;
+}
+
+.get-started-form {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.get-started-form input {
+    border: 0.5px solid #fff;
+    color: #FFF;
+    border-radius: 5px;
+    width:68% ;
+    height: 100%;
+    background: #00000080;
+    padding-left: 10px;
+}
+ 
+@media (max-width:950px) {
+    #btn-get-started{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    .get-started-form{
+        flex-direction: column;
+    }
+
+    .get-started-form input {
+       height: 50px; 
+       width: 85%;
+    }
+}

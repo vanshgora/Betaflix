@@ -1,0 +1,49 @@
+.vid-sec {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    border-bottom: 10px solid #242424;
+    color: #fff;
+    display: flex;
+    padding: 5rem 10%;
+    gap: 30px;
+    height: 65vh;
+}
+
+.vid-sec .text-div {
+    flex-basis: 55%;
+    padding-bottom: 2rem;
+}
+
+.vid-sec .vid-frame {
+    position: relative;
+    flex-basis: 45%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.vid-frame img {
+    position: absolute;
+    top: -27vh;
+    width: 500px;
+    z-index: 5;
+}
+
+.vid-frame video {
+    position: absolute;
+    top: -185px;
+    left: 87px;
+    width: 323px;
+    height: 200px;
+}
+
+.vid-sec h2 {
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.vid-sec p {
+    font-size: 24px;
+    font-weight: 400;
+}

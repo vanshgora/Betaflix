@@ -1,5 +1,6 @@
 import React from 'react'
 import './IntroHead.css'
+import GetStarted from './GetStarted'
 
 export default function IntroHead() {
   return (
@@ -13,10 +14,7 @@ export default function IntroHead() {
       <p>
         Ready to watch? Enter your email to create or restart your membership.
       </p>
-      <div className="get-started-form">
-        <input type='text' placeholder=' Email adderess'/>
-        <button className='btn' id='btn-get-started'>Get Started</button>
-      </div>
+      <GetStarted/>
     </div>
   )
 }
