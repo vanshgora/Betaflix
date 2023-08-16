@@ -25,6 +25,7 @@
     height: 100%;
     background: #00000080;
     padding-left: 10px;
+    height: 55px;
 }
  
 @media (max-width:950px) {

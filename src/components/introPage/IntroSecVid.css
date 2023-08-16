@@ -37,6 +37,13 @@
     height: 200px;
 }
 
+.vid-frame #vid1{
+    height: 209px;
+    top: -127px;
+    width: 396px;
+    left: 52px;
+}
+
 .vid-sec h2 {
     font-size: 3.1rem;
     font-weight: 700;
@@ -46,4 +53,54 @@
 .vid-sec p {
     font-size: 24px;
     font-weight: 400;
+}
+
+@media (max-width:1000px) {
+    .vid-sec{
+        height: 95vh;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vid-frame img{
+        left: -200px;;
+        top:-100px;
+        width: 400px;
+    }
+
+    .vid-frame #vid1 {
+        height: 165px;
+        top: -37px;
+        width: 364px;
+        left: -183px;
+    }
+
+    .vid-frame video {
+        position: absolute;
+        top: -94px;
+        left: -132px;
+        width: 257px;
+        height: 183px;
+    }
+
+    .vid-sec h2{
+        font-size:2rem ;
+    }
+
+    .vid-sec p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:600px) {
+
+    .vid-sec h2{
+        font-size:1.25rem ;
+        text-align: center;
+    }
+
+    .vid-sec p {
+        font-size: 1rem;
+        text-align: center;
+    }
 }

@@ -1,19 +1,38 @@
-/* .accor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
 .accor-sec {
     background: #000;
     color: #fff;
     padding: 4rem;
     border-bottom: 10px solid #242424;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accor-sec .accor{
+    width: 72%;
+}
+
+.accor-sec .accor-item{
+    border: 0 !important;
+}
+
+.accor .accor-btn {
+    background-color: #212222 !important;
+    color: #93939b;
+    border: 0 !important;
+    font-size: 26px;
+    border-radius: 0 !important;
+    padding: 1.75rem !important;
+}
+
+.accor-sec h2{
+    border: 0 !important;
 }
 
 .seconhd{
-    font-size: 3.30rem;
-    margin-bottom: 28px;
+    font-size: 3rem;
+    margin-bottom: 15px;
     font-weight: 900;
     text-align: center;
 }
@@ -21,25 +40,19 @@
 .accordion-button{
     font-size: 2rem;
 }
-/* 
-.accor-item{
-    max-width: 900px;
+
+@media (max-width:1000px) {
+    .accor-sec .accor {
+        width: 95%;
+    }
 }
 
-.accor-body{
-    background-color: #2e2e2f;
-    color: #fff;
-    border: none;
-}
+@media (max-width:600px){
+    .accor-sec .accor{
+        width: 100%;
+    }
 
-.accor-head h5{
-    width: 100%;
-    height: 100%;
-    background-color: #434344;
-    color: #fff;
+    .accor-sec .accor-btn{
+        font-size: 1rem;
+    }
 }
-
-button {
-    border: none;
-    background-color: #000;
-} */

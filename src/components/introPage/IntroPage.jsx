@@ -21,16 +21,21 @@ export default function IntroPage() {
   let frame2 = 'https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png';
   let video1 = 'https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v';
   let video2 = 'https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v';
+  let linksArr = [['FAQ', 'Media Center', 'way to Watch', 'Cookies Prefrence'],
+                  ['Speed Test', 'Help Center', 'Investor Relation', 'Term of Use'],
+                  ['Coorporate Information', 'Legal Notices', 'Accounts', 'Jobs'], 
+                  ['Privacy', 'Contact Us', 'Only on Netflix']];
+
   return (
     <div>
       <Header/>
       <IntroHead/>
-      <IntroSecVid primaryText = {primaryVidText1} secondaryText = {secondaryVidText1} frame = {frame1} video = {video1}/>
+      <IntroSecVid primaryText = {primaryVidText1} secondaryText = {secondaryVidText1} frame = {frame1} video = {video1} vid1 = {true}/>
       <IntroSecStill primaryText = {primaryImgText1} secondaryText = {secondaryImgText1} image = {image1}/>
       <IntroSecVid primaryText = {primaryVidText2} secondaryText = {secondaryVidText2} frame = {frame2} video = {video2}/>
       <IntroSecStill primaryText = {primaryImgText2} secondaryText = {secondaryImgText2} image = {image2}/>
       <IntroSecAcorr/>
-      <Footer/>
+      <Footer linksArr = {linksArr}/>
     </div>
   )
 }

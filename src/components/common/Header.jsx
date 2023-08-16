@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from 'react-bootstrap'
 import logo from './Betaflix-logo.png'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -16,7 +17,7 @@ export default function Header() {
             <li><a className="dropdown-item text-white" href="#">English</a></li>
             <li><a className="dropdown-item text-white" href="#">Hindi</a></li>
           </ul>
-          <Button className="sign-in">Sign in</Button>
+          <Link className="btn btn-primary sign-in" to = '/signup'>Sign in</Link>
         </div>
       </div>
     </header>

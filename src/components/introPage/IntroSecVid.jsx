@@ -14,7 +14,7 @@ export default function IntroSecVid(props) {
         </div>    
         <div className="vid-frame">
           <img src={props.frame} alt="frame"/> 
-          <video src={props.video} alt="Video" loop></video>
+          <video src={props.video} alt="Video" id={props.vid1 && `vid1`} autoPlay loop></video>
         </div>  
     </div>
   )
