@@ -17,7 +17,7 @@ export default function Header() {
             <li><a className="dropdown-item text-white" href="#">English</a></li>
             <li><a className="dropdown-item text-white" href="#">Hindi</a></li>
           </ul>
-          <Link className="btn btn-primary sign-in" to = '/signup'>Sign in</Link>
+          <Link className="btn btn-primary sign-in" to = '/signin'>Sign in</Link>
         </div>
       </div>
     </header>
