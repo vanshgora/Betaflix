@@ -1,0 +1,9 @@
+.detail-page {
+    background-color: #000;
+    padding-top: 6.5rem;
+}
+
+.detail-page header{
+    position: absolute;
+    top: 0;
+}

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
 import logo from './Betaflix-logo.png'
 import './Header.css'
 import { Link } from 'react-router-dom'

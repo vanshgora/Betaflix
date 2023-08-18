@@ -7,7 +7,30 @@ footer{
     gap: 20px;
 }
 
+.ft-links-lists {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10rem;
+}
+
+footer .link-list1, footer .link-list2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .ft-link{
     color: #fff;
     font-size: 1rem;
+}
+
+@media (max-width:950px) {
+    .ft-links-lists{
+        flex-wrap: wrap;
+        padding-right: 5rem;
+    }
+
+    footer .link-list1, footer .link-list2{
+        flex-basis: 40%;
+    }
 }

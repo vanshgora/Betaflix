@@ -1,0 +1,88 @@
+.sgstep3{
+    margin-top: 150px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.plan-card {
+    text-decoration: none;
+    color: #000;
+    border: 5px double #223b7a;
+    border-radius: 20px;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.plan-card h2 {
+    text-align: center;
+}
+
+.plan-card span {
+    text-align: center;
+    color: #223b7a;
+    width: 100%;
+}
+
+.plan-card:hover {
+    background-color: #223b7a;
+    color: bisque;
+    border-color: #fff;
+}
+
+.plan-card:hover span {
+    color: beige;
+}
+
+.plan-card:active {
+    background-color: #223b7a;
+    color: bisque;
+    border-color: #fff;
+}
+
+.plan-card:active span {
+    color: beige;
+}
+
+@media (max-width: 950px) {
+    .sgstep3{
+        margin-top: 80px;
+    }
+
+    .sgstep3 h1, .sgstep3 h5{
+        text-align: center;
+    }
+
+    .plans{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .plan-card {
+        flex-basis: 40%;
+        padding: 10px;
+    }
+
+    .plan-card h2 {
+        font-size: 25px;
+    }
+
+    .plan-benefit{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:600px) {
+    .plan-card h2 {
+        font-size: 17px;
+    }
+
+    .plan-benefit{
+        font-size: 13px;
+    }
+}

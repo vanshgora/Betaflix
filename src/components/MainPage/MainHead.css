@@ -1,0 +1,9 @@
+.mainhead{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.5))
+}
+
+.maincsl-img{
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
+}

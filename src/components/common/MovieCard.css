@@ -1,0 +1,23 @@
+.movie-card{
+    height: 220px;
+    min-width: 160px;
+    max-width: 160px;
+    border: 0.5px solid #fff;
+    border-radius: 10px;
+}
+
+@media(max-width:950px){
+    .movie-card{
+        height: 185px;
+        min-width: 135px;
+        max-width: 135px;
+    }
+}
+
+@media(max-width:500px){
+    .movie-card{
+        height: 160px;
+        min-width: 120px;
+        max-width: 120px;
+    }
+}

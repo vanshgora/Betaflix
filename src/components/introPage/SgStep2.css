@@ -1,4 +1,4 @@
-.sg-step1 {
+.sg-step2 {
     height:420px ;
     margin-top: 8rem;
     width: 400px;
@@ -7,21 +7,12 @@
     gap: 10px;
 }
 
-.sg-step1 .icons {
-    font-size: 6.5rem;
-    color: #2634ce;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 30px;
-}
-
-.sg-step1 h5{
+.sg-step2 h5{
     margin-top: 10px;
     text-align: center;
 }
 
-.sg-step1 h1{
+.sg-step2 h1{
     margin-top: 0;
     padding-top: 0;
     font-size: 34px;
@@ -30,10 +21,17 @@
     margin-bottom: 0;
 }
 
-.sg-step1 p {
+.sg-step2 p {
     font-size: 16px;
 }
 
-.sg-step1  button{
+.sg-step2  button{
     font-size: 22px;
+}
+
+.sg-step2 input {
+    border-radius: 5px;
+    padding: 12px;
+    border: 1px solid black;
+    color: black;
 }

@@ -1,0 +1,39 @@
+.horz-slide{
+    padding: 2rem 3rem;
+}
+
+.horz-slide h2{
+    color: #fff;
+    padding-bottom: 1rem;
+} 
+
+.horz-slide ul{
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    overflow: scroll;
+}
+
+.horz-slide ul::-webkit-scrollbar{
+    height: 0;
+}
+
+@media(max-width:950px) {
+    .horz-slide{
+        padding: 2rem 2rem;
+    }
+
+    .horz-slide ul {
+        gap: 25px;
+    }
+}
+
+@media(max-width:500px) {
+    .horz-slide{
+        padding: 2rem 1rem;
+    }
+
+    .horz-slide ul {
+        gap: 15px;
+    }
+}
