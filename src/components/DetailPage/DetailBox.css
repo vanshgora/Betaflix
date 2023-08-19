@@ -1,0 +1,25 @@
+.detail-box {
+    width: 79%;
+    color: #fff;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.lan-n-date{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.genre{
+    margin-bottom: 0;
+    padding-bottom: 8px;
+    color: #364ca3;
+}
+
+@media (max-width:600px) {
+    .detail-box{
+        text-align: center;
+    }
+}

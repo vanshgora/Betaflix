@@ -4,6 +4,7 @@ import Header from '../common/Header'
 import DetailImg from './DetailImg'
 import HorzSlide from '../common/HorzSlide'
 import Footer from '../common/Footer'
+import DetailBox from './DetailBox'
 let linksArr = [['FAQ', 'Media Center', 'way to Watch', 'Cookies Prefrence'],
 ['Speed Test', 'Help Center', 'Investor Relation', 'Term of Use'],
 ['Coorporate Information', 'Legal Notices', 'Accounts', 'Jobs'],
@@ -14,6 +15,7 @@ export default function DetailPage() {
     <div className='detail-page'>
       <Header />
       <DetailImg />
+      <DetailBox/>
       <HorzSlide title='More like this' />
       <Footer linksArr={linksArr} style={{ backgroundColor: 'gray' }} />
     </div>
