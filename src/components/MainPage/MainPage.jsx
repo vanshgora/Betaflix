@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import MainHead from './MainHead'
 import './MainPage.css'
 import HorzSlide from '../common/HorzSlide'
 import Footer from '../common/Footer'
+import { useSelector } from 'react-redux'
+
 let linksArr = [['FAQ', 'Media Center', 'way to Watch', 'Cookies Prefrence'],
                   ['Speed Test', 'Help Center', 'Investor Relation', 'Term of Use'],
                   ['Coorporate Information', 'Legal Notices', 'Accounts', 'Jobs'], 

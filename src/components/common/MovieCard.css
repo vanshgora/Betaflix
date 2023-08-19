@@ -4,6 +4,14 @@
     max-width: 160px;
     border: 0.5px solid #fff;
     border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.movie-card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 @media(max-width:950px){

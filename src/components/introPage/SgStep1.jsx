@@ -11,9 +11,9 @@ export default function SgStep1() {
   return (
     <div className='sg-step1'> 
       <section className="icons">
-      <i class="fa-solid fa-mobile"></i>
-      <i class="fa-solid fa-desktop"></i>
-      <i class="fa-solid fa-tablet-screen-button"></i>
+      <i className="fa-solid fa-mobile"></i>
+      <i className="fa-solid fa-desktop"></i>
+      <i className="fa-solid fa-tablet-screen-button"></i>
       </section>
       <h5>STEP 1 OF 3</h5>
       <h1>Finish setting up your account </h1>

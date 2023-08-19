@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import IntroSecAcorr from './IntroSecAcorr';
 import Header from '../common/Header';
 import IntroHead from './IntroHead';
 import IntroSecVid from './IntroSecVid';
 import IntroSecStill from './IntroSecStill';
 import Footer from '../common/Footer';
+import { useDispatch, useSelector } from 'react-redux';
+import { mainActions } from '../../store/main-slice';
 
 export default function IntroPage() {
   let primaryVidText1 = 'Enjoy on your TV';
@@ -22,20 +24,37 @@ export default function IntroPage() {
   let video1 = 'https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v';
   let video2 = 'https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v';
   let linksArr = [['FAQ', 'Media Center', 'way to Watch', 'Cookies Prefrence'],
-                  ['Speed Test', 'Help Center', 'Investor Relation', 'Term of Use'],
-                  ['Coorporate Information', 'Legal Notices', 'Accounts', 'Jobs'], 
-                  ['Privacy', 'Contact Us', 'Only on Netflix']];
+  ['Speed Test', 'Help Center', 'Investor Relation', 'Term of Use'],
+  ['Coorporate Information', 'Legal Notices', 'Accounts', 'Jobs'],
+  ['Privacy', 'Contact Us', 'Only on Netflix']];
+
+  const dispatch = useDispatch();
+  const movieData = useSelector(state => state.main.data);
+  let isFirst = true;
+
+  const fetchdata = async () => {
+    const resp = await fetch('https://api.themoviedb.org/3/trending/all/day?api_key=e26cbf7877d8440b9b49026cfb063ddc&page=1');
+    const data = await resp.json();
+    await dispatch(mainActions.addData(data));
+  }
+
+  useEffect(() => {
+    if(isFirst){
+      fetchdata();
+      isFirst = false;
+    }
+  }, []);
 
   return (
     <div>
-      <Header/>
-      <IntroHead/>
-      <IntroSecVid primaryText = {primaryVidText1} secondaryText = {secondaryVidText1} frame = {frame1} video = {video1} vid1 = {true}/>
-      <IntroSecStill primaryText = {primaryImgText1} secondaryText = {secondaryImgText1} image = {image1}/>
-      <IntroSecVid primaryText = {primaryVidText2} secondaryText = {secondaryVidText2} frame = {frame2} video = {video2}/>
-      <IntroSecStill primaryText = {primaryImgText2} secondaryText = {secondaryImgText2} image = {image2}/>
-      <IntroSecAcorr/>
-      <Footer linksArr = {linksArr}/>
+      <Header />
+      <IntroHead />
+      <IntroSecVid primaryText={primaryVidText1} secondaryText={secondaryVidText1} frame={frame1} video={video1} vid1={true} />
+      <IntroSecStill primaryText={primaryImgText1} secondaryText={secondaryImgText1} image={image1} />
+      <IntroSecVid primaryText={primaryVidText2} secondaryText={secondaryVidText2} frame={frame2} video={video2} />
+      <IntroSecStill primaryText={primaryImgText2} secondaryText={secondaryImgText2} image={image2} />
+      <IntroSecAcorr />
+      <Footer linksArr={linksArr} />
     </div>
   )
 }
