@@ -4,18 +4,18 @@ import './HorzSlide.css'
 import { useSelector } from 'react-redux'
 
 export default function HorzSlide(props) {
-  const data = useSelector(state => state.main.data[0].results);
-  console.log(data);
+  let data = useSelector(state => state.main.data[props.dataSec].results);
+
   return (
     <div className='horz-slide'>
       <h2>{props.title}</h2>
       <ul>
-       {
-        data.map((item) => {
-          return(
-          <MovieCard poster={item.poster_path}/>)
-        })
-       }
+          {
+          data.map((item) => {
+            return (
+              <MovieCard poster={item.poster_path} movieObj = {item} />)
+          })
+        }
       </ul>
     </div>
   )

@@ -31,11 +31,15 @@ export default function IntroPage() {
   const dispatch = useDispatch();
   const movieData = useSelector(state => state.main.data);
   let isFirst = true;
+  let fetchingArr = [1,2,3,4,5,6,7,8,9]
 
   const fetchdata = async () => {
-    const resp = await fetch('https://api.themoviedb.org/3/trending/all/day?api_key=e26cbf7877d8440b9b49026cfb063ddc&page=1');
-    const data = await resp.json();
-    await dispatch(mainActions.addData(data));
+    for(let i = 1;i<= 9; i++) {
+      const resp = await fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=e26cbf7877d8440b9b49026cfb063ddc&page=${i}`);
+      const data = await resp.json();
+      await dispatch(mainActions.addData(data));
+      console.log(1);
+    }
   }
 
   useEffect(() => {

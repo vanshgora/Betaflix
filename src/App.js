@@ -3,7 +3,6 @@ import './App.css';
 import IntroPage from './components/introPage/IntroPage';
 import SignUpPage from './components/introPage/SignUpPage';
 import SgPage1 from './components/introPage/SgPage1';
-import { useEffect } from 'react';
 import MainPage from './components/MainPage/MainPage';
 import DetailPage from './components/DetailPage/DetailPage';
 
@@ -22,6 +21,9 @@ function App() {
         </Routes>
         <Routes>
           <Route exact path='/home' element={<MainPage />} />
+        </Routes>
+        <Routes>
+          <Route exact path='/detail_page' element={<DetailPage />} />
         </Routes>
       </BrowserRouter>
     </>

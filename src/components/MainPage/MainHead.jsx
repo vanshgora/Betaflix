@@ -1,8 +1,12 @@
 import React from 'react'
 import Header from '../common/Header'
 import './MainHead.css'
+import { useSelector } from 'react-redux';
 
 export default function MainHead() {
+  let data;
+  data = useSelector(state => state.main.data[0].results);
+ 
   return (
     <div className='main-head'>
       <Header />
@@ -14,13 +18,13 @@ export default function MainHead() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item maincsl-item active">
-            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_large.jpg" className="d-block w-100 maincsl-img" alt="..." />
+            <img src={`https://image.tmdb.org/t/p/original${data[3].backdrop_path}`} className="d-block w-100 maincsl-img" alt="..." />
           </div>
           <div className="carousel-item maincsl-item">
-            <img  src="https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_large.jpg" className="d-block w-100 maincsl-img" alt="..." />
+            <img  src={`https://image.tmdb.org/t/p/original${data[7].backdrop_path}`} className="d-block w-100 maincsl-img" alt="..." />
           </div>
           <div className="carousel-item maincsl-item">
-            <img  src="https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_large.jpg" className="d-block w-100 maincsl-img" alt="..." />
+            <img  src={`https://image.tmdb.org/t/p/original${data[19].backdrop_path}`} className="d-block w-100 maincsl-img" alt="..." />
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

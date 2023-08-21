@@ -1,24 +1,24 @@
 import React from 'react'
 import './DetailBox.css'
+import { useSelector } from 'react-redux';
 
 export default function DetailBox() {
+    const language = useSelector(state => state.movie.movieObj.original_language);
+    const releaseDate = useSelector(state => state.movie.movieObj.release_date);
+    const title = useSelector(state => state.movie.movieObj.original_title);
+    const genre = useSelector(state => state.movie.movieObj.genre_ids);
+    const overview = useSelector(state => state.movie.movieObj.overview);
+    
     return (
         <section className='detail-box'>
             <div className="lan-n-date">
                 <span className="language">language: English</span>
-                <span className="release-date">23-jan-2023</span>
+                <span className="release-date">{releaseDate}</span>
             </div>
-            <h1 className="movie-title">Title</h1>
+            <h1 className="movie-title">{title}</h1>
             <p className="genre">action, adventure, romantic, anime</p>
-            <p className="movie-about">Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Ducimus, perspiciatis,
-                quo corporis quod maiores nihil nostrum eveniet porro
-                quis commodi officia ratione ea. Ex soluta eius veniam
-                debitis magni dignissimos quam obcaecati? Tempore deserunt
-                saepe iste! Laborum maxime officiis magnam? Dolor quasi rem
-                vel est enim repellendus veritatis. Voluptate molestias quisquam
-                officia? Doloremque architecto quae ut ex impedit ipsum illum,
-                iure autem! Quibusdam ea in quo eum nemo, nostrum laudantium?
+            <p className="movie-about">
+                {overview}
             </p>
         </section>
     )

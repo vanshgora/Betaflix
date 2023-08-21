@@ -1,9 +1,14 @@
 .mainhead{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.5))
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.5));
+}
+
+.maincsl-item {
+    height: 75vh;
+    object-fit: cover;
 }
 
 .maincsl-img{
-    height: 75vh;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
