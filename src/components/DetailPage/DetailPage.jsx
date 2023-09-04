@@ -14,12 +14,13 @@ let linksArr = [['FAQ', 'Media Center', 'way to Watch', 'Cookies Prefrence'],
 export default function DetailPage() {
   let movieObj = useSelector(state => state.movie.movieObj);
   console.log(movieObj);
+  let genre = movieObj.genre_ids[0];
   return (
     <div className='detail-page'>
       <Header />
       <DetailImg/>
       <DetailBox/>
-      <HorzSlide title='More like this' dataSec = {7} />
+      <HorzSlide title='More like this' genre = {genre}/>
       <Footer linksArr={linksArr} style={{ backgroundColor: 'gray' }} />
     </div>
   )

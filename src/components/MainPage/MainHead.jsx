@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 export default function MainHead() {
   let data;
-  data = useSelector(state => state.main.data[0].results);
+  data = useSelector(state => state.main.data);
  
   return (
     <div className='main-head'>

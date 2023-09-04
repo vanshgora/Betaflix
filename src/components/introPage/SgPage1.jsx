@@ -19,6 +19,8 @@ let style = {
 export default function SgPage1() {
   const step = useSelector(state => state.sgPage.step);
   console.log(step);
+  const data = useSelector(state => state.main.data);
+  console.log(data);
   return (
     <div className="get-startedPage">
       <Header />

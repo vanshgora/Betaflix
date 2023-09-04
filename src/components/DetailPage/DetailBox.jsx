@@ -12,7 +12,7 @@ export default function DetailBox() {
     return (
         <section className='detail-box'>
             <div className="lan-n-date">
-                <span className="language">language: English</span>
+                <span className="language">language: {language === 'en'? "English": language === 'ko'? "Korean" : language === 'ja'? "Japanese": language}</span>
                 <span className="release-date">{releaseDate}</span>
             </div>
             <h1 className="movie-title">{title}</h1>

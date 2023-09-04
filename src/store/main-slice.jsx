@@ -5,7 +5,9 @@ let mainSlice = createSlice({
     initialState: {data: []},
     reducers: {
         addData(state, action) {
-            state.data.push(action.payload);
+            action.payload.results.forEach(item => {
+                state.data.push(item);
+            })
         }
     }
 });
