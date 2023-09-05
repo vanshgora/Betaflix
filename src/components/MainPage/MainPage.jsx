@@ -18,9 +18,12 @@ export default function MainPage() {
       <HorzSlide title = 'Action Movies'genre = {28}/>
       <HorzSlide title = 'Romantic Movies' genre = {10749}/>
       <HorzSlide title = 'Adventure Movies' genre = {12}/>
+      <HorzSlide title = 'comedy' genre = {35}/>
       <HorzSlide title = 'Horror Movies' genre = {27}/>
       <HorzSlide title = 'Animations' genre = {16}/>
       <HorzSlide title = 'Sci-Fi' genre = {878}/>
+      <HorzSlide title = 'Fantasy' genre = {14}/>
+      <HorzSlide title = 'Mystrey' genre = {9648}/>
       <Footer linksArr = {linksArr} style = {{backgroundColor: 'grey'}}/>
     </div>
   )

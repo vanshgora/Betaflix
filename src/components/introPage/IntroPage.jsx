@@ -35,7 +35,7 @@ export default function IntroPage() {
 
   const fetchdata = async () => {
     try {
-      for (let i = 1; i <= 10; i++) {
+      for (let i = 11; i <= 20; i++) {
         const resp = await fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=e26cbf7877d8440b9b49026cfb063ddc&page=${i}`);
         const data = await resp.json();
         await dispatch(mainActions.addData(data));
