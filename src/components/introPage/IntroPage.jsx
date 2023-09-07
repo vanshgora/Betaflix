@@ -42,7 +42,7 @@ export default function IntroPage() {
         console.log(1);
       }
     } catch (e) {
-      console.log(e);
+      alert("Please connect to a Network");
     }
   }
 
