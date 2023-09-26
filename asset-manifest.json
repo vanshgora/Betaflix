@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Betaflix/static/css/main.e2639952.css",
+    "main.js": "/Betaflix/static/js/main.67de8845.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Betaflix/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Betaflix-logo.png": "/Betaflix/static/media/Betaflix-logo.d27661c0919e947b4f96.png",
+    "index.html": "/Betaflix/index.html",
+    "main.e2639952.css.map": "/Betaflix/static/css/main.e2639952.css.map",
+    "main.67de8845.js.map": "/Betaflix/static/js/main.67de8845.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Betaflix/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2639952.css",
+    "static/js/main.67de8845.js"
+  ]
+}
